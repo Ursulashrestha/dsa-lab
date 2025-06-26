@@ -12,3 +12,8 @@ def count_repeated_instances(text):
         if count > 1:
             total_repeats += count - 1
     return total_repeats
+
+text = "the shit is in the toilet and the brain is not braining and what the hell is happpening"
+
+result = count_repeated_instances(text)
+print(result)
