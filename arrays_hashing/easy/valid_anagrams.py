@@ -26,4 +26,34 @@ def isAnagram(self, s:str, t:str):
 # Method 3 (Using Dictionaries/ HashMap)
 # Create two different dictionries for each
 
+def isAnagaram(s,t):
+    # for words/phrase to be anagram should contain equal string length
+    if len(s) != len(t):
+        return False
+    
+    # Creating two dictionaries to count each letter in the two different words
+    count_s={}
+    count_t={}
+
+    # Looping in s
+    for char in s:
+        if char in count_s:
+            count_s[char] += 1 # if char is already in count_s, add 1 count
+        else:
+            count_s = 1 # else set count to 1
+    
+    # do same for t
+    for char in t:
+        if char in count_t:
+            count_t[char] += 1
+        else:
+            count_t[char] = 1
+    
+    return count_s==count_t # compare the counts
+    
+
+
+
+
+
 
