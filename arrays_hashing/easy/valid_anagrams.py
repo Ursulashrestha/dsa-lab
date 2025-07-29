@@ -52,8 +52,7 @@ def isAnagaram(s,t):
     return count_s==count_t # compare the counts
     
 
-
-
-
+# Time Complexity = O(n)
+# Space Complexity = O(1)  -- Stores count_s and count_t and the size of the alphabet is fixed 
 
 
