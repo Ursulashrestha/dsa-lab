@@ -1,8 +1,8 @@
 # Given
 # nums = [2,7,11,15]
 # target = 9
-# Todo: Return indices of the two numbers in nums that they add up to target
 # Output: [0,1]
+# Todo: Return indices of the two numbers in nums that they add up to target
 
 def twoSum(nums:list[int], target:int) -> list[int]:
     seen = {} # create an empty dict to store num
