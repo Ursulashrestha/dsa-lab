@@ -26,6 +26,8 @@ def concatenateArray(nums: list[int]) -> list[int]:
         # ans[2] = 2
         #[2,0,0,2,0,0]-- after the first loop
     return ans
+# Time complexity: O(n)
+# Space complexity: O(n)
 
 # Alternative
 # def getConcatenate(nums: list[int]) -> list[int]:
