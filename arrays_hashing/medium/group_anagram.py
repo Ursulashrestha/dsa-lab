@@ -27,8 +27,8 @@ def groupAnagrams(strs: list[str]) -> list[list[str]]:
     for word in strs:
         count = [0]* 26
         for letter in word:
-            count[ord(letter) - ord('a')]+=1
-        result[tuple(count)].append(word)
+            count[ord(letter) - ord('a')]+=1  # ord('a') = 97 => constant value in ASCII
+        result[tuple(count)].append(word)  # result[(1, 0, 0, 0, 1, ..., 1)] = ["eat", "ate"]
     return list(result.values())
 
 # Time complexity : O(m*n)
