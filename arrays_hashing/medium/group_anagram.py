@@ -1,5 +1,4 @@
 # Group Anagrams
-# *Things to Know*
 # In regular dictionary {}, if key is not already in the dict, it gives keyError
 # Input:
 # strs = ["eat,"tea", "tan","ate","nat","bat"]
@@ -21,5 +20,19 @@ def groupAnagrams(strs: list[str]) -> list[list[str]]:
 
 # time complexity: O(m*nlogn)
 # space complexity: O(m*n)
+
+#####------------------------------------- Second/Optimal Method------------------- ######
+def groupAnagrams(strs: list[str]) -> list[list[str]]:
+    result = defaultdict(list)
+    for word in strs:
+        count = [0]* 26
+        for letter in word:
+            count[ord(letter) - ord('a')]+=1
+        result[tuple(count)].append(word)
+    return list(result.values())
+
+# Time complexity : O(m*n)
+# Space complexity: O(m)
+
 
     
