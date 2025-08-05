@@ -40,7 +40,7 @@ def isAnagaram(s,t):
         if char in count_s:
             count_s[char] += 1 # if char is already in count_s, add 1 count
         else:
-            count_s = 1 # else set count to 1
+            count_s[char] = 1 # else set count to 1
     
     # do same for t
     for char in t:

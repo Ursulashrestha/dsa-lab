@@ -10,8 +10,8 @@ def twoSum(nums:list[int], target:int) -> list[int]:
 
     for index, num in enumerate(nums):
         needed = target - num
-             #1st loop
-               # = 9 - 2
+             #1st loop   #2nd loop
+               # = 9 - 2  9 - 7 = 2
                # = 7
         # so is needed which is 7 in seen, NO because its empty 
         # seen now will look like {2: 0}

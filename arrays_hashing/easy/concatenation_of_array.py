@@ -19,7 +19,7 @@ def concatenateArray(nums: list[int]) -> list[int]:
     ans=[0] * (2*n) # [0,0,0,0,0,0]
     # ans[i] == nums[i]= ans[i+n]
     for index,num in enumerate(nums):
-        ans[index] = num = ans[index+num]
+        ans[index] = ans[index+n] = num 
         # loop one : i=0, num=2, n=3
         # ans[0] = ans[0+2]=> ans[2] = 2
         # ans[0]=2
