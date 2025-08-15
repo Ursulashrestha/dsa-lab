@@ -1,6 +1,10 @@
 # Longest consecutive sequence
+#1 
 nums = [1,2,100,3,4,200]
 output = 4
+#2
+# nums = [0,3,2,5,4,6,1,1]
+#output = 7
 
 def longestConsecuitve(nums:list[int])-> int:
     numSet = set(nums)
@@ -13,3 +17,6 @@ def longestConsecuitve(nums:list[int])-> int:
                 length += 1
             longest = max(length, longest) #compares two value & returns larger one and assign it to longest
     return longest
+
+#Time Complexity: O(n)
+#Space Complexity : O(n)
