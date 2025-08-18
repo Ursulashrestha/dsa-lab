@@ -29,3 +29,9 @@ def idvalidSudoku(board: list[list[str]])-> bool:
             rows[r].add(board[r][c])
             squares[(r//3, c//3)].add(board[r][c])
     return True
+#For inner loop
+#Checking membership in a set  is O(1) on average.
+#Adding to a set is also O(1) on average.
+
+#Time complexity: O(n²)
+#Space complexity:O(n²)
