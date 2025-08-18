@@ -1,7 +1,7 @@
 # Group Anagrams
 # In regular dictionary {}, if key is not already in the dict, it gives keyError
 # Input:
-# strs = ["eat,"tea", "tan","ate","nat","bat"]
+# strs = ["eat","tea", "tan","ate","nat","bat"]
 # Output:
 # [["bat"],["nat","tan"],["ate","eat","tea"]]
 
