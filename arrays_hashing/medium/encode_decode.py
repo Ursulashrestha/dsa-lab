@@ -16,7 +16,7 @@ def decode(s:str)-> list[str]:
         j = i # j as new pointer to find #
         while s[j] != "#":
             j += 1 # move j until found #
-        length = s[i:j]  # s[0:1] -> '5', s[0:2]-> '5#'
+        length = int(s[i:j])  # s[0:1] -> '5', s[0:2]-> '5#'
         i = j + 1
         j = i + length
         res.append(s[i:j])
