@@ -32,3 +32,6 @@ def alphaNum(self,c):
     return (ord('a')<= ord(c) <= ord('z')or
             ord('A')<= ord(c) <= ord('Z') or
             ord('0')<= ord(c) <= ord('9'))
+
+#Time Complexity: O(n)
+#Space Complexity : O(1)
