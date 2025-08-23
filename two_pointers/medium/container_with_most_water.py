@@ -15,3 +15,5 @@ def maxArea(height:list[int])-> int:
         else:
             r-=1
     return res
+#Time complexity : O(n)
+#Space COmplexity: O(1)
