@@ -14,3 +14,5 @@ def maxProfit(prices:list[int])-> int:
             l = r
         r+= 1
     return maxProfit
+#Time COmplexity: O(n)
+#Space Complexity : O(1)
