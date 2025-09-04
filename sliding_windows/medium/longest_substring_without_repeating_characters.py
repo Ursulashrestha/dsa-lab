@@ -11,3 +11,5 @@ def longestlengthSubstring(strs:str)-> int:
         mp[strs[r]]= r #update the index in mp for repeated char
         res = max(res, r-l+1)
     return res
+#Time complexity: O(n)
+#Space complexity: O(m)
