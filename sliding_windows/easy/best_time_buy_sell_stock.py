@@ -7,7 +7,7 @@ def maxProfit(prices:list[int])-> int:
     r = 1
     maxProfit = 0
     while r<len(prices):
-        if prices[l]<prices[r]: 
+        if prices[l]<prices[r]: #buy price is less than sell price
             profit = prices[r]-prices[l]
             maxProfit = max(profit, maxProfit)
         else:
