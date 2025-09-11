@@ -8,6 +8,7 @@ def longestlengthSubstring(strs:str)-> int:
     for r in range(len(strs)):
         if strs[r] in mp: #if number is found in mp
             l = max(mp[strs[r]]+1,l) #move l skipping the previous/old char and make sure it doesnt move backward
+            #strs[r]
         mp[strs[r]]= r #update the index in mp for repeated char
         res = max(res, r-l+1)
     return res

@@ -7,7 +7,7 @@ def concatArray(nums: list[int])-> list[int]:
     for i in range(2): #Repeat the next steps 2 times
         for num in nums:
             ans.append(num)
-        return ans #Add the number to the end of the list ans
+    return ans #Add the number to the end of the list ans
 
 # Time complexity: O(n)
 # Space complexity: O(n)
