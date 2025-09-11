@@ -16,3 +16,5 @@ def twoSum(numbers:list[int], target:int)->list[int]:
         else:
             return[l+1, r+1]
     return [] #a function that finishes without return would give back None, its safety net
+#Time complexity: O(n)
+#Space complexity: O(1)
